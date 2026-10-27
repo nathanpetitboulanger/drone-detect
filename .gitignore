@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Données, sorties, poids (poids -> GitHub Release)
+/data/
+/datasets/
+/runs/
+/outputs/
+*.pt
+*.onnx
+*.engine
+*.trt
+*.cache
+
+# Vidéos lourdes (le GIF de démo docs/assets/*.gif reste commité)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Divers
+.env
+.DS_Store
+
+# Config Ultralytics locale (YOLO_CONFIG_DIR) et poids téléchargés
+.ultralytics/
+/weights/
+
+# Vidéo de présentation (exception, ≤ 10 Mo) ; polices récupérées par video/fetch_fonts.py
+!docs/assets/presentation.mp4
+/video/fonts/

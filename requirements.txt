@@ -1,0 +1,21 @@
+# Python 3.12 — testé sur RTX 3070 Laptop (driver CUDA 13.x), torch cu130
+ultralytics==8.4.190
+torch==2.14.1
+torchvision==0.29.1
+opencv-python==5.0.0.93
+lap==0.5.13           # ByteTrack / BoT-SORT
+sahi==0.12.8          # inférence par tuiles
+pycocotools==2.0.11   # évaluation COCO (SAHI vs image entière)
+onnx==1.23.2
+onnxslim==0.1.98
+onnxruntime-gpu==1.31.1
+pandas==3.1.0
+# Données (scripts/data/)
+gdown==6.4.2          # téléchargement Google Drive (DUT Anti-UAV)
+scipy==1.18.1         # lecture des annotations MATLAB (Halmstad)
+openpyxl==3.1.5       # description Excel des vidéos Halmstad
+matplotlib==3.11.2
+pytest==9.1.1
+
+# Optionnel — export TensorRT local (≈ 4 Go ; sur Jetson, utiliser le TensorRT de JetPack)
+# tensorrt-cu13==10.16.1.11
