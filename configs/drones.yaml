@@ -1,0 +1,9 @@
+# Jeu de données de détection de drones (1 classe), format YOLO / Ultralytics.
+# Généré par scripts/data/ (download → convert_* → split), voir docs/DATA.md.
+# Chemins relatifs au dossier de ce fichier (pas de clé `path`) : utilisable depuis n'importe quel CWD.
+train: ../data/yolo/train/images
+val: ../data/yolo/val/images
+test: ../data/yolo/test/images
+
+names:
+  0: drone
